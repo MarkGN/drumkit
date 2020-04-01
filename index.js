@@ -13,7 +13,6 @@ soundFiles = {
 
 function playKey(key) {
   if (Object.keys(soundFiles).includes(key)) {
-<<<<<<< HEAD
     try {
       var btn = document.querySelector("."+key);
       btn.classList.add("pressed");
@@ -27,9 +26,7 @@ function playKey(key) {
     } catch (e) {
       console.log("missing audio file " + f);
     }
-=======
     new Audio("sounds/" + soundFiles[key] + ".mp3").play();
->>>>>>> 3933767a812d3e293c37e7dbddfb1d4bfe354019
   }
 }
 for (var i = 0; i < buttons.length; i++) {
